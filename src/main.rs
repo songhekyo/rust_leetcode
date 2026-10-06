@@ -2,7 +2,7 @@ mod arrays;
 
 use crate::arrays::{
     p0217_contains_duplicate, p0242_valid_anagram, p0485_max_consecutive_ones,
-    p1299_replace_element_with_greatest_on_right_side,
+    p1299_replace_element_with_greatest_on_right_side, p1929_concetanation_array,
 };
 
 fn main() {
@@ -26,5 +26,10 @@ fn main() {
         p1299_replace_element_with_greatest_on_right_side::Solution::replace_elements(vec![
             17, 18, 5, 4, 6, 1
         ])
+    );
+
+    print!(
+        "{:?}",
+        p1929_concetanation_array::Solution::get_concatenation(vec![1, 2, 1])
     )
 }
