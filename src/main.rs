@@ -1,8 +1,9 @@
 mod arrays;
 
-use arrays::p0217_contains_duplicate;
-
-use crate::arrays::{p0242_valid_anagram, p0485_max_consecutive_ones};
+use crate::arrays::{
+    p0217_contains_duplicate, p0242_valid_anagram, p0485_max_consecutive_ones,
+    p1299_replace_element_with_greatest_on_right_side,
+};
 
 fn main() {
     print!(
@@ -18,5 +19,12 @@ fn main() {
     print!(
         "{:?}",
         p0485_max_consecutive_ones::Solution::find_max_consecutive_ones(vec![1, 1, 0, 1, 1, 1])
+    );
+
+    print!(
+        "{:?}",
+        p1299_replace_element_with_greatest_on_right_side::Solution::replace_elements(vec![
+            17, 18, 5, 4, 6, 1
+        ])
     )
 }
